@@ -1,6 +1,6 @@
 # README
 
-Working with Udemy Rails.
+Working with Udemy Rails. Test repository for GitHub.
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
