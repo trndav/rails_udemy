@@ -1,0 +1,19 @@
+<h1>All Articles Hub</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @articles5.each do |articlename| %>
+            <tr>
+                <td><%= articlename.title %></td>
+                <td><%= articlename.description %></td>
+                <td>Nothing for now</td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
