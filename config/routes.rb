@@ -1,10 +1,7 @@
 #Configuring routes/pages
 
-#Configuring routes/pages
-
 Rails.application.routes.draw do
   root "pages#home"
   get "about", to: "pages#about"
-  resources :articles, only: [:show]
-  resources :articles, only: [:show, :index]
+  resources :articles, only: [:show, :index, :new, :create]
 end

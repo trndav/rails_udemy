@@ -6,4 +6,13 @@ class ArticlesController < ApplicationController
     def index
         @articles5 = Article.all
     end
+
+    def new
+
+    end
+
+    def create
+        #debugger
+        render plain: params[:article]
+    end
 end
