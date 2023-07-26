@@ -6,10 +6,16 @@ class ArticlesController < ApplicationController
         @articles5 = Article.all
     end
     def new
+        @article = Article.new
     end
     def create
-        @article8 = Article.new(params.require(:article).permit(:title, :description))
-        @article8.save
-        redirect_to @article8 
+        @article = Article.new(params.require(:article).permit(:title, :description))
+        if @article.save
+            flash[:notice] = "Article was created successfully."
+            redirect_to @article
+        else
+            render "new"
+            #render :new, status: :unprocessable_entity
+        end
     end
 end
