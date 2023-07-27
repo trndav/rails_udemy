@@ -1,25 +1,4 @@
 <h1>Create Cool Article</h1>
-<% if @article.errors.any? %>
-    <h3>The following error prevented article save:</h3>
-    <ul>
-        <% @article.errors.full_messages.each do |msg| %>
-            <li><%= msg %></li>
-        <% end %>
-    </ul>
-<% end %>
-<%= form_with scope: :article, url: articles_path, data: { turbo: false }, local: true do |f| %>
-    <p>
-        <%= f.label :title %></br>
-        <%= f.text_field :title %>
-    </p>
-    <p>
-        <%= f.label :description %></br>
-        <%= f.text_area :description %>
-    </p>
-    <p>
-        <%= f.submit %>
-    </p>
-<% end %>
+<%= render "form" %>
 <%= link_to "Return to articles listing", articles_path %> | 
 <%= link_to "HomePage", root_path %>
-</p>
