@@ -4,7 +4,7 @@
         <tr>
             <th>Title</th>
             <th>Description</th>
-            <th>Action</th>
+            <th colspan="3">Action</th>
         </tr>
     </thead>
     <tbody>
@@ -19,3 +19,10 @@
         <% end %>
     </tbody>
 </table>
+<p>
+    <%= link_to "Create new article", new_article_path %>
+</p>
+<p>
+<%= link_to "HomePage", root_path %> |
+<%= link_to "About", about_path %> 
+</p>
