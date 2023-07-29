@@ -2,27 +2,27 @@ h1 {
     color: green;
   }
 
-.nav {
-    color: rgb(123, 126, 123);
-  }
-
 .navbar {
-    color: rgb(43, 65, 80);
+    background-color: #050505 !important;
   }
 
-.navbar-brand {
-    color: rgb(43, 65, 80);
+.nav-link {
+    color: #c9fac9 !important;
   }
 
-  nav-item {
-    color: rgb(43, 65, 80);
+.dropdown-menu {
+    color: #c9fac9 !important;
   }
 
-  .jumbotron {
-    color: rgb(43, 65, 80);
+ #logo {
+    color: #f2f3f2 !important;
+    float: left;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: bold;
   }
 
-  .navbar-toggler {
-    background-color: #f00;
-    font-size: 20px;
+  #home-container {
+    background-color: #d2f5d2 !important;
+    margin-top: 25px;
   }

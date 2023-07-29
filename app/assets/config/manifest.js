@@ -4,3 +4,5 @@
 //= link_tree ../../../vendor/javascript .js
 //= link_tree ../builds
 //= custom.css
+
+//= link_directory ../../javascript .js
